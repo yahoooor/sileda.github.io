@@ -1,0 +1,42 @@
+
+<header>
+    <div class="header-container" [ngStyle]="{'background-color': 'rgba(110,110,110,' + headerOpacity + ')' }">
+        <div class="title">
+            <h2>SILEDA</h2> 
+        </div>
+        <div class="navbar">
+            <div class="navbar-item">
+                <a href="#home">STRONA GŁÓWNA</a>
+            </div>
+            <div class="navbar-item">
+                <a href="#services">USŁUGI</a>
+            </div>
+            <div class="navbar-item">
+                <a href="#aboutUs">O NAS</a>
+            </div>
+            <div class="navbar-item">
+                <a href="#contact">KONTAKT</a>
+            </div>
+        </div>
+
+        <div class="breadcrumbs" (click)="menuVisible = !menuVisible">
+            <i class="pi pi-bars"></i>
+        </div>
+
+        <div class="navbar-mobile" *ngIf="menuVisible">
+            <i class="pi pi-times" (click)="menuVisible = !menuVisible"></i>
+            <div class="navbar-item">
+                <a href="#home">STRONA GŁÓWNA</a>
+            </div>
+            <div class="navbar-item">
+                <a href="#services">USŁUGI</a>
+            </div>
+            <div class="navbar-item">
+                <a href="#aboutUs">O NAS</a>
+            </div>
+            <div class="navbar-item">
+                <a href="#contact">KONTAKT</a>
+            </div>
+        </div>
+    </div>
+</header>

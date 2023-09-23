@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/viva-light/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+
+body {
+    font-family: var(--font-family);
+}
+
+html, body {
+    background: whitesmoke;
+    height: 100%;
+    margin: 0;
+    padding: 0;    
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-track
+{
+	//-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: rgba(0,0,0,.3);
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: rgba(0,0,0,.3);
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgb(211, 189, 155);
+	background-color: #d6d0d0;
+}

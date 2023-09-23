@@ -1,0 +1,38 @@
+<div class="page">
+    <div id="home" class="section home">
+        
+        <div class="intro">
+            <h2>Skup złomu, sprzedaż węgla, nawozy</h2>
+            <div style="text-align: center;">
+                <button pButton pRipple label="Poznaj ofertę" icon="pi pi-arrow-down-right" iconPos="right" class="p-button-success p-button-sm" (click)="scrollTo(services)"></button>
+            </div>
+        </div>
+
+    </div>
+
+    <div #services id="services" class="section">
+        <div class="section-title">
+            <h2>NASZE USŁUGI</h2>
+        </div>
+
+        <div class="section-container">
+            <app-services></app-services>
+        </div>
+    </div>
+
+    <div #aboutUs id="aboutUs" class="section">
+        <div class="section-container">
+            <app-about-us></app-about-us>
+        </div>
+    </div>
+
+    <div #contact id="contact" class="section">
+        <div class="section-title">
+            <h2>KONTAKT</h2>
+        </div>
+
+        <div class="section-container">
+            <app-contact></app-contact>
+        </div>
+    </div>
+</div>

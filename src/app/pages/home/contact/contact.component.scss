@@ -1,0 +1,76 @@
+
+
+.contact {
+    margin-top: 20px;
+    display: grid;
+    width: 700px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    grid-template-rows: 1fr 1fr;
+
+
+    //gap: 30px; 
+
+    &:first-child {
+        margin-bottom: 30px;
+    }
+
+    .contact-item {
+        display: flex;
+        h3 {
+            margin-top: -4px;
+            margin-left: 8px;
+        }
+
+        .contact-icon {
+            i {
+                font-size: 24px;
+                color: rgb(211, 189, 155);
+                ;
+            }
+        }
+
+        .contact-description {
+            div {
+                margin-left: 8px;
+            }
+        }
+    }
+}
+
+.map-container {
+    margin-top: 40px;
+    height: 300px;
+    width: 100%;
+
+    ::ng-deep .leaflet-marker-icon img {
+        width: 20px !important;
+    }
+
+    ::ng-deep .leaflet-div-icon {
+        background: transparent !important;
+        border: none !important;
+    }
+
+    ::ng-deep .leaflet-marker-icon span {
+        font-weight: bold;
+    }
+}
+
+
+@media screen and (max-width: 700) {
+    .contact {
+        //display: block;
+    }
+
+    .contact-item {}
+}
+
+@media screen and (max-width: 750px) {
+    .contact {
+       width: auto !important;
+       padding: 0 10px;
+    }
+
+    .contact-item {}
+}

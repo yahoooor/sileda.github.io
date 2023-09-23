@@ -1,0 +1,32 @@
+.about-us {
+    display: flex;
+    //justify-content: center;
+    //align-items: center;
+    height: 100%;
+    gap: 20px;
+    padding: 0px 20px;
+    padding-top: 10px;
+
+    .about-us-description {
+        flex-grow: 1;
+        //word-break: keep-all;
+        text-align: center;
+
+        h2 {
+            text-align: center;
+        }
+    }
+
+    .about-us-photo {
+        flex-grow: 1;
+        img {
+            border-radius: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .about-us {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,11 @@
+$font-color: rgba(251,251,251,1);
+
+
+.footer-container {
+    text-align: center;
+    height: 30px;
+    color: $font-color;
+    background: rgba(110, 110, 110,1);
+    //position: absolute;
+    bottom: 0;
+}

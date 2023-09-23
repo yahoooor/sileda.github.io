@@ -1,0 +1,101 @@
+.services {
+    height: 100%;
+    background-color: whitesmoke;
+
+    .service-cards {
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+
+        .service-card {
+            padding: 10px;
+            padding-top: 0px;
+            height: 400px;
+            width: 300px;
+            //background-color: lightcoral;
+            border-radius: 10px;
+            //box-shadow: 0px 2px 5px -1px rgba(158, 160, 179, 1);
+
+
+            &:hover {
+                box-shadow: 0px 2px 5px -1px rgba(158, 160, 179, 1);
+
+                .service-image {
+                    img {
+                        opacity: 0.7;
+                    }
+                }
+
+                .service-button {
+                    //display: none;
+                }
+            }
+
+
+            .service-image {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+
+                img {
+                    border-radius: 10px;
+                    border-bottom-left-radius: 0;
+                    border-bottom-right-radius: 0;
+                    width: 300px;
+                    height: 200px;
+                }
+            }
+
+            .service-title {
+                padding-top: 10px;
+                text-align: center;
+
+                h4 {
+                    margin: 0 !important;
+                }
+            }
+
+            .service-description {
+                padding-top: 10px;
+                text-align: center;
+                width: 100%;
+            }
+
+            .service-button {
+                padding-top: 15px;
+                text-align: center;
+
+                ::ng-deep {
+                    .p-button {
+                        background: rgb(211, 189, 155);
+                        border-color: rgb(211, 189, 155);
+                        font-size: 0.75rem;
+
+                        &:focus {
+                            box-shadow: 0 0 0 0.1rem rgb(238, 213, 175);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .service-card {
+        height: 300px !important;
+        width: 225px !important;
+
+        .service-image {
+            img {
+                height: 150px !important;
+                width: 225px !important;
+            }
+        }
+    }
+
+    
+}
